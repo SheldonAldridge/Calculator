@@ -1,0 +1,97 @@
+body
+{
+    margin: auto 15rem;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.base
+{
+    margin-top:10rem;
+    background-color:#0C1021;
+    width:20rem;
+    height:40rem;
+    border-radius: 1.5rem;
+}
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.time
+{
+    font-size:10px;
+    color:white;
+    margin-top: 1rem;
+    margin-left:2rem;
+}
+
+.icons
+{
+    margin-left:11.3rem;
+    margin-top: 0.2rem; 
+}
+
+.icons img
+{
+    
+    width:13px;
+    margin-top:10px;
+    padding-left: 5px;
+}
+
+.battery
+{
+    filter:  brightness(0) invert(1);
+}
+
+span{
+    display:block;
+    width:6%;
+    border-top: 3px solid white;
+    margin-left:1rem;
+    margin-top:2rem;
+ }
+
+ .hl
+ {
+    margin-top:3px;
+ }
+
+ .hl2
+ {
+    margin-top:2px;
+ }
+
+ .calc-header
+ {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .calc-header h2
+ {
+     position: absolute;
+     margin-left:6rem;
+     color:white;
+     margin-top: -23px;
+ }
+
+.screen
+{
+    margin-left:16rem;
+    margin-top:10rem;
+}
+
+.calc
+{
+    color:white;
+}
+
+.answer
+{
+    color:white;
+    font-size:32px;
+}
