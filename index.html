@@ -31,50 +31,48 @@
         </div>
 
         <div class = "screen">
-        <div class ="calc">56</div>
-        <div class ="answer">56</div>
+        <div class ="calc">5</div>
+        <div class ="answer">5</div>
         </div>
 
-        <table class="numBtns">
+        <div class="row">
 
-          <tr>
-            <td><button class = "row1"       onclick="pressButton()">C</button></td>
-            <td><button class = "row1"       onclick="pressButton()">()</button></td>
-            <td><button class = "row1"       onclick="pressButton()">%</button></td>
-            <td><button class = "operators"   onclick="pressButton()">/</button></td>
-          </tr>
-
-          <tr>
-            <td><button class = "row2"       onclick="pressButton()">1</button></td>
-            <td><button class = "row2"       onclick="pressButton()">2</button></td>
-            <td><button class = "row2"       onclick="pressButton()">3</button></td>
-            <td><button class = "operators"   onclick="pressButton()">x</button></td>
-          </tr>
-
-          <tr>
-            <td><button class = "row3"       onclick="pressButton()">4</button></td>
-            <td><button class = "row3"       onclick="pressButton()">5</button></td>
-            <td><button class = "row3"       onclick="pressButton()">6</button></td>
-            <td><button class = "operators"   onclick="pressButton()">+</button></td>
-          </tr>
-
-          <tr>
-            <td><button class = "row4"       onclick="pressButton()">7</button></td>
-            <td><button class = "row4"       onclick="pressButton()">8</button></td>
-            <td><button class = "row4"       onclick="pressButton()">9</button></td>
-            <td><button class = "operators"   onclick="pressButton()">-</button></td>
-          </tr>
-
-          <tr>
-            <td><button class = "row5 "   onclick="pressButton()">0</button></td>
-            <td><button class = "row5"    onclick="pressButton()">.</button></td>
-            <td><button class = "operators" onclick="pressButton()">=</button></td>
-          </tr>
-        </table>
+          <div class = "col">
+          <button class ="col-op" onclick="buttonPress(c)">C</button>
+          <button class ="col-op" onclick="buttonPress('()')">()</button>
+          <button class ="col-op" onclick="buttonPress()">%</button>
+          <button class ="col-op" onclick="buttonPress()">/</button>
         </div>
-        
+
+        <div class = "col">
+          <button class ="col-num" onclick="buttonPress(1)">1</button>
+          <button class ="col-num" onclick="buttonPress(2)">2</button>
+          <button class ="col-num" onclick="buttonPress(3)">3</button>
+          <button class ="col-op-end" onclick="buttonPress(x)">x</button>
+        </div>
+
+        <div class = "col">
+          <button class ="col-num" onclick="buttonPress(4)">4</button>
+          <button class ="col-num" onclick="buttonPress(5)">5</button>
+          <button class ="col-num" onclick="buttonPress(6)">6</button>
+          <button class ="col-op-end" onclick="buttonPress(+)">+</button>
+        </div>
+
+        <div class = "col">
+          <button class ="col-num" onclick="buttonPress(7)">7</button>
+          <button class ="col-num" onclick="buttonPress(8)">8</button>
+          <button class ="col-num" onclick="buttonPress(9)">9</button>
+          <button class ="col-op-end" onclick="buttonPress()">-</button>
+        </div>
+
+        <div class = "col">
+          <button class ="col-num" id="border-left" onclick="buttonPress(0)">0</button>
+          <button class ="col-num" onclick="buttonPress()">.</button>
+          <button class ="col-eq-end" id="border-right" onclick="buttonPress()">=</button>
+        </div>
+
       </div>
-      
+
     </main>
   </body>
 </html>
