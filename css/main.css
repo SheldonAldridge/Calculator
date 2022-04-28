@@ -7,7 +7,7 @@ body
 
 .base
 {
-    margin-top:10rem;
+    margin-top:2rem;
     background-color:#0C1021;
     width:20rem;
     height:40rem;
@@ -94,4 +94,20 @@ span{
 {
     color:white;
     font-size:32px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    font-size:20px;
+}
+
+.row1, .row2, .row3, .row4, .row5
+{
+    padding:20px;
+}
+
+.operators
+{
+    padding:20px;
 }
