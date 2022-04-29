@@ -81,23 +81,21 @@ span{
  }
 
 
-.screen
-{
-    margin-left:16rem;
-    margin-top:149px;
-}
-
-.calc
-{
-    width:5px;
-    color:white;
-}
-
-.answer
-{
-    color:white;
-    font-size:32px;
-}
+ .screen {
+    margin-left: 0rem;  /* changed */
+    margin-top: 149px;
+  }
+  
+  .calc {
+    width: 5px;
+    color: white;
+  }
+  
+  .answer {
+    color: white;
+    font-size: 32px;
+    text-align: right; /* added */
+  }
 
 button{
     border: none;
