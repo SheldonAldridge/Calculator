@@ -3,6 +3,7 @@ body
     margin: auto 15rem;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: red;
 }
 
 .base
@@ -80,9 +81,8 @@ span{
      margin-top: -23px;
  }
 
-
  .screen {
-    margin-left: 0rem;  /* changed */
+    margin-left: 0rem; 
     margin-top: 149px;
   }
   
@@ -94,7 +94,9 @@ span{
   .answer {
     color: white;
     font-size: 32px;
-    text-align: right; /* added */
+    text-align: right;
+    width:20ch;
+    overflow-wrap: break-word
   }
 
 button{
