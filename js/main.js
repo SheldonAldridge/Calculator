@@ -20,8 +20,9 @@ function buttonPress(numbers) {
 
     if(input.length >= 21)
     {
-        
-        result.innerHTML += "\n";
-        document.querySelector('.answer').style.marginTop = "-1rem";
+        for(let i = 0;i < input.length;i++){
+            result.innerHTML += "\n";
+            document.querySelector('.answer').style.marginTop = "-1rem";
+        }
     }
 }
