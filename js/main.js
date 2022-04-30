@@ -3,7 +3,6 @@ Setting up varlaibles*
 **********************/
 
 let result;
-let calculation;
 let num1;
 let num2;
 
@@ -14,15 +13,44 @@ Function for numbers to display on screen*
 
 function buttonPress(numbers) {
 
-    result = document.querySelector('.answer');
-    let input=result.innerHTML += numbers
-    console.log(input)
+    let input = document.querySelector('.answer').innerText.split('\n').join('')+numbers
+    let display = document.querySelector('.answer').innerHTML = input
+    console.log(`${typeof display} ${display}`)
 
-    if(input.length >= 21)
-    {
-        for(let i = 0;i < input.length;i++){
-            result.innerHTML += "\n";
-            document.querySelector('.answer').style.marginTop = "-1rem";
-        }
+    if (display.length >= 21) {
+
+      for (let i = 0; i < display.length; i++) {
+        document.querySelector('.answer').style.marginTop = -i + "px";
+      }
     }
+  }
+
+/***********************************
+Function for calculation of numbers*
+************************************/
+
+function calculation(buttonPress){
+
+    switch(numbers){
+        case "/":
+            numbers / numbers;
+            break;
+        case "*":
+            numbers * numbers;
+            break;
+        case "+":
+            numbers + numbers;
+            break;
+        case "-":
+            numbers - numbers;
+            break;
+        case "%":
+            numbers % numbers;
+            break;     
+            default:
+    }
+  
+    buttonPress()
 }
+
+
