@@ -2,55 +2,42 @@
 Setting up varlaibles*
 **********************/
 
-let result;
-let num1;
-let num2;
-
-
-/*****************************************
-Function for numbers to display on screen*
-******************************************/
-
-function buttonPress(numbers) {
-
-    let input = document.querySelector('.answer').innerText.split('\n').join('')+numbers
-    let display = document.querySelector('.answer').innerHTML = input
-    console.log(`${typeof display} ${display}`)
-
-    if (display.length >= 21) {
-
-      for (let i = 0; i < display.length; i++) {
-        document.querySelector('.answer').style.marginTop = -i + "px";
-      }
-    }
-  }
+let char, result = '';
 
 /***********************************
-Function for calculation of numbers*
-************************************/
-
-function calculation(buttonPress){
-
-    switch(numbers){
-        case "/":
-            numbers / numbers;
-            break;
-        case "*":
-            numbers * numbers;
-            break;
-        case "+":
-            numbers + numbers;
-            break;
-        case "-":
-            numbers - numbers;
-            break;
-        case "%":
-            numbers % numbers;
-            break;     
-            default:
-    }
-  
-    buttonPress()
-}
+Add Event Listener for calculation*
+***********************************/
 
 
+document.querySelectorAll('button').forEach(button=> {  // add click event to all button
+    button.addEventListener('click', (e)=> {
+      char = e.target.textContent;
+      if (char == '=') {
+
+        let values = result.split(/([-+\/\*])/);
+        for (let i = 0; i < values.length; i++) {
+          if (isNaN(values[i])) {
+            let operator = values[i]
+            i++;
+            let nextNumber = parseFloat(values[i])
+            result = operations[operator](result, nextNumber)
+          } else {
+            result = parseFloat(values[i])
+          }
+        }
+      } else if (char == 'C') {
+        result = '';
+      } else {
+        result += char;
+      }
+      document.querySelector('.answer').textContent = result
+    })
+  })
+
+  let operations ={
+      '+': (a, b) => a + b,
+      '-':(a, b) => a - b,
+      '*':(a, b) => a * b,
+      '/':(a, b) => a / b,
+      '%':(a, b) => a % b,
+  }
