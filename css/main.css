@@ -3,8 +3,18 @@ body
     margin: auto 15rem;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: red;
 }
+
+:root,
+:root.light{
+    --bg-color:#fff;
+    --text-color: #123;
+}
+
+:root.dark {
+    --bg-color: #121212;
+    --text-color: #45ADFE;
+  }
 
 .base
 {
@@ -81,6 +91,19 @@ span{
      margin-top: -23px;
  }
 
+ .theme-btn.light {
+    display: none;
+  }
+  
+  .dark .theme-btn.dark {
+    display: none;
+  }
+  
+  .dark .theme-btn.light {
+    display: block;
+  }
+
+
  .screen {
     margin-left: 0rem; 
     margin-top: 149px;
@@ -96,7 +119,8 @@ span{
     font-size: 32px;
     text-align: right;
     width:20ch;
-    overflow-wrap: break-word
+    overflow-wrap: break-word;
+    margin-left:-1rem;
   }
 
 button{
@@ -104,6 +128,25 @@ button{
     cursor: pointer;
 }
 
+.theme-btn{
+    position: absolute;
+    width:3em;
+    height:3em;
+    padding:0.5em;
+    cursor: pointer;
+    border:none;
+    background: transparent;
+    margin-top:-36.9rem;
+    margin-left:16rem;
+
+}
+
+.theme-btn img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+  }
 .row
 {
     margin-top: -359px;
