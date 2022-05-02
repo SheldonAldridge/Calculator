@@ -1,24 +1,21 @@
 body
 {
-    margin: auto 15rem;
+    margin: 20rem 70rem;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 :root,
 :root.light{
-    --bg-color:#fff;
-    --text-color: #123;
+    --light-color:#FFFFFF;
+    --input-color: #1F1F1F;
+    --numbtn-color: #C0E4EC;
+    --optext-color: #0186A3;
+    --eqbtn-color:#01B7DF;
 }
-
-:root.dark {
-    --bg-color: #121212;
-    --text-color: #45ADFE;
-  }
 
 .base
 {
-    margin-top:2rem;
     background-color:#0C1021;
     width:19.8rem;
     height:40rem;
@@ -135,18 +132,15 @@ button{
     padding:0.5em;
     cursor: pointer;
     border:none;
-    background: transparent;
-    margin-top:-36.9rem;
-    margin-left:16rem;
-
+    
 }
 
 .theme-btn img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-
   }
+
 .row
 {
     margin-top: -359px;
@@ -167,9 +161,28 @@ padding: 1px;
     height:68px;
 }
 
-.col-op, .col-op-end{
+.col-op, .col-op-end, .theme-btn{
     background-color: #093A52;
     color:#01A6CB;
+}
+
+
+.theme-btn{
+    padding:2.3rem;
+    position: absolute;
+    margin-top: -357px;
+    margin-left:15rem;
+    padding-top:32px;
+    padding-left:39px;
+    z-index:2;
+}
+
+.theme-btn img{
+    filter: invert(48%) sepia(94%) saturate(2331%) hue-rotate(157deg) brightness(94%) contrast(99%); 
+    width: 2rem;
+    height: 3rem;
+    margin-top: -23px;
+    margin-left: -14px;
 }
 
 .col-num
