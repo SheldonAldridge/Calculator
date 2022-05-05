@@ -10,8 +10,7 @@ Caclulates the following:
 - Multiplication
 - Division
 - Clear input
+- Color Theme button to change from dark them to light them
 
 # Features to come
-
-- Color Theme button to change from dark them to light them
 - Mathimatical equation sits on top of answer, once answer has been caclulated
