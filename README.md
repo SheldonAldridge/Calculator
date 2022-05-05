@@ -4,11 +4,10 @@ This is a caclulator that I created, I did use a UI design that I found on dribb
 
 # Functionality
 
-Caclulates the following:
-- Addition
-- Subtraction
-- Multiplication
-- Division
+- calculates with Addition
+- calculates with Subtraction
+- calculates with Multiplication
+- calculates with Division
 - Clear input
 - Color Theme button to change from dark them to light them
 
